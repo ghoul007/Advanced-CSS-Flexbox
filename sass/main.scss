@@ -1,0 +1,12 @@
+@import '_base.scss';
+
+body{
+    background:  var(--color-primary-dark)  ;
+    font-size: 2px;
+}
+
+.container{
+    max-width: 120rem;
+    margin: 8em;
+    background: white;
+}
