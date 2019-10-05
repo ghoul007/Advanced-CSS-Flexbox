@@ -14,6 +14,21 @@
 }
 
 .content{
-    background-color: black
+    display: flex;
 }
 
+
+.sidebar{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 18%;
+    justify-content: space-between;
+}
+
+.hotel-view{
+    background: orangered;
+    flex:1;
+    height: 80rem;
+
+}
