@@ -3,23 +3,62 @@
 
 .logo{
     height:3.25rem;
+    margin-left: 3rem;
 }
 
 
 ////////////////////
 // Search
+
 .search{
+    // background-color: orange;
+    flex: 0 0 40%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     &__input{
+        font-family: inherit;
+        font-size:  inherit;
+        background-color: var(--color-grey-light-2);
+        border: none;
+        padding: .7rem 2rem;
+        border-radius: 100px;
+        width: 90%;
+        transition: all .2s;
+        margin-right: -3.25rem;
+         &:focus{
+             width:100%;
+             outline: none;
+              background-color: var(--color-grey-light-3);
+         }
+
+         &::--webkit-input-placeholder{
+             font-weight: 100;
+              background-color: var(--color-grey-light-4);
+         }
 
     }
 
     &__button{
+        background-color: var(--color-grey-light-2);
+        border: none;
+        &:focus{
+            outline: none;
+
+        }
+
+        &:active{
+            transform: translateY(2px)
+        }
 
     }
 
     &__icon{
-        height: 3rem;
+        height: 2rem;
         width: 2rem;
+        fill: var(--color-grey-dark-3);
     }
 }
 
@@ -29,6 +68,7 @@
 // user navigation
 
 .user-nav{
+background-color: green;
 
     &__icon-box{
 

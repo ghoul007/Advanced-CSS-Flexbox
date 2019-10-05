@@ -1,5 +1,15 @@
 .container{
     background: var(--color-grey-light-1);
       margin: 8rem auto;
-
 }
+
+
+.header{
+    font-size: 1.5rem;
+    height: 7rem;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
