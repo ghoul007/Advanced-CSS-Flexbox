@@ -17,6 +17,13 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid var(--color-grey-light-3);
+
+       @media only screen and (max-width: $bp-smalllest){
+        flex-wrap: wrap;
+        height: 12rem;
+    }
+
+
 }
 
 .content{
@@ -53,6 +60,10 @@
        padding: 3rem;
       }
 
+    @media only screen and (max-width: $bp-small){
+        flex-direction: column;
+    }
+
 }
 
 .description{
@@ -62,10 +73,16 @@
     margin-right: 4.5rem;
     box-shadow: var(--shadow-light);
     background: #fff;
-       @media only screen and (max-width: $bp-medium){
-       padding: 2rem;
-    margin-right: 3rem;
+
+    @media only screen and (max-width: $bp-medium){
+          padding: 2rem;
+          margin-right: 3rem;
       }
+
+    @media only screen and (max-width: $bp-small){
+            margin-right: 0;
+            margin-bottom: 3rem;
+    }
 
 }
 

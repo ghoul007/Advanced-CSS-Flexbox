@@ -17,6 +17,15 @@
     align-items: center;
     justify-content: center;
 
+
+@media only screen and (max-width: $bp-smalllest){
+      font-size: 50%;
+      order: 1;
+      flex:0 0 100%;
+    }
+
+
+
     &__input{
         font-family: inherit;
         font-size:  inherit;
@@ -186,7 +195,11 @@ align-items: center;
             z-index:10;
             display: flex;
             align-items: center;
-
+            @media only screen and (max-width: $bp-small){
+                flex-direction: column;
+                padding: 1.5rem;
+                text-align: center;
+            }
     }
 
 
@@ -196,6 +209,11 @@ align-items: center;
         height:1.75rem;
         margin-right: 2rem;
         fill: currentColor;
+    @media only screen and (max-width: $bp-small){
+        margin: 0;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
     }
 }
 
@@ -238,6 +256,10 @@ align-items: center;
         text-transform: uppercase;
         letter-spacing: 1;
         margin: 1rem 2rem;
+
+           @media only screen and (max-width: $bp-small){
+               font-size: 1.5rem;
+            }
     }
 
 
@@ -280,15 +302,23 @@ align-items: center;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+
+
     }
 
     &__rating-average{
             font-size: 2.25rem;
             font-weight: 300;
+            @media only screen and (max-width: $bp-small){
+               font-size: 1.5rem;
+            }
     }
 
     &__rating-count{
             font-size: .8rem;
+               @media only screen and (max-width: $bp-small){
+               font-size: .5rem;
+            }
     }
 }
 
