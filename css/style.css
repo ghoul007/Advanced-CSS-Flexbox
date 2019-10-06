@@ -25,6 +25,9 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media only screen and (max-width: 68.75em) {
+    html {
+      font-size: 50%; } }
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -38,6 +41,10 @@ body {
 .container {
   background: var(--color-grey-light-1);
   margin: 8rem auto; }
+  @media only screen and (max-width: 75em) {
+    .container {
+      margin: 0;
+      width: 100%; } }
 
 .header {
   font-size: 1.5rem;
@@ -50,6 +57,9 @@ body {
 
 .content {
   display: flex; }
+  @media only screen and (max-width: 56.25em) {
+    .content {
+      flex-direction: column; } }
 
 .sidebar {
   background-color: black;
@@ -67,6 +77,9 @@ body {
   padding: 4.5rem;
   background-color: var(--color-grey-light-2);
   border-bottom: var(--line); }
+  @media only screen and (max-width: 56.25em) {
+    .detail {
+      padding: 3rem; } }
 
 .description {
   padding: 4.5rem;
@@ -74,6 +87,10 @@ body {
   margin-right: 4.5rem;
   box-shadow: var(--shadow-light);
   background: #fff; }
+  @media only screen and (max-width: 56.25em) {
+    .description {
+      padding: 2rem;
+      margin-right: 3rem; } }
 
 .user-reviews {
   flex: 1;
@@ -162,10 +179,17 @@ body {
   background: black;
   display: flex;
   flex-direction: column; }
+  @media only screen and (max-width: 56.25em) {
+    .side-nav {
+      flex-direction: row;
+      margin: 0; } }
   .side-nav__item {
     position: relative; }
     .side-nav__item:not(:last-child) {
       margin-bottom: .5rem; }
+    @media only screen and (max-width: 56.25em) {
+      .side-nav__item {
+        flex: 1; } }
   .side-nav__item::before {
     content: '';
     position: absolute;
@@ -201,6 +225,9 @@ body {
   font-size: 1.2rem;
   text-align: center;
   padding: 2.5rem; }
+  @media only screen and (max-width: 56.25em) {
+    .legal {
+      display: none; } }
 
 .gallery {
   display: flex; }
@@ -310,6 +337,8 @@ body {
   align-items: center; }
   .recommend__count {
     margin-right: auto; }
+  .recommend__friends {
+    display: flex; }
   .recommend__photo {
     box-sizing: content-box;
     height: 4rem;
@@ -317,7 +346,7 @@ body {
     border-radius: 40%;
     border: 3px solid #fff; }
     .recommend__photo:not(:last-child) {
-      margin-right: -1.5rem; }
+      margin-right: -2rem; }
 
 .review {
   background: #fff;
@@ -325,6 +354,9 @@ body {
   margin-bottom: 3.5rem;
   box-shadow: var(--shadow-light);
   position: relative; }
+  @media only screen and (max-width: 56.25em) {
+    .review {
+      padding: 2rem; } }
   .review__text {
     margin-bottom: 2rem;
     z-index: 10;
